@@ -14,11 +14,12 @@
 
 <body>
   <header>
-    <%- include('partials/_header') %>
+    <% include ./partials/_header %>
   </header>
+
   <main style="margin: 1em;">
     <h3>My URLs</h3>
-    <% if (message) {%>
+    
     <h5 style="color: maroon"><%= message %></h5>
     <%}%>
     <table class="table">
@@ -63,3 +64,5 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+
+
