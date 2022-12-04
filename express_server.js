@@ -19,8 +19,6 @@ const users = {
   },
 };
 
-
-
 const urlDatabase = {
   "b2xVn2": "http://www.lighthouselabs.ca", 
   "9sm5xK": "http://www.google.com"
@@ -169,12 +167,3 @@ app.post("/register", (req, res)=>{
     };
   res.redirect('/urls')
   }});
-
-
-
-/* log out - post */
-app.post("/logout", (req, res)=>{
-    
-  // req.session.user_id = null;
-  res.redirect("/urls");
-});
